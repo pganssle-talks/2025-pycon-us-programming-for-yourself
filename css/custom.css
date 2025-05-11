@@ -336,6 +336,11 @@ img.mobile-screenshot {
     max-height: 80dvh;
 }
 
+img.mobile-screenshot {
+    max-height: 80dvh;
+}
+
+
 div.gallery {
     display: flex;
     flex-direction: row;
