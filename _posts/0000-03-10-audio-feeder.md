@@ -25,7 +25,15 @@
 
 --
 
-<div style="display:flex; flex-direction: row">
+<style>
+div.striped-border-blocks code {
+    border: 3px black dashed;
+    padding: 3px;
+}
+
+</style>
+
+<div class="side-by-side striped-border-blocks">
 
 <div>
 
@@ -175,7 +183,7 @@ RSS_item = """
 
 <div style+"height: 80dvh">
 <div class="centered-container fragment disappearing-fragment fade-out" data-fragment-index="0">
-<div class="not-centered">
+<div class="not-centered" style="width: 100%">
 
 ```
 $ tree --du -h
