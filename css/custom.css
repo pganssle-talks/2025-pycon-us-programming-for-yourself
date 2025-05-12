@@ -84,6 +84,11 @@ body {
   font-weight: normal;
   color: #000; }
 
+.reveal .slides {
+    height: 100%;
+    margin-top: 0;
+}
+
 ::selection {
   color: #fff;
   background: rgba(0, 0, 0, 0.99);
@@ -92,15 +97,51 @@ body {
 .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.3;
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 .reveal .slides>section {
   min-height: 90% !important;
+  top: auto;
 }
 
 .reveal .slides>section>section {
+  display: flex !important;
+  flex-direction: column;
   min-height: 100% !important;
+  height: 100dvh;
+  width: 100%;
+  padding-bottom: 2em !important;
 }
+
+div.centered-container {
+    display: flex;
+    height: 100%;
+    padding-bottom: 2em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.left-container {
+    text-align: left;
+}
+
+/*********************************************
+ * Title slide
+ *********************************************/
+
+.main-title {
+  font-size: 3em;
+  color: #000;
+  font-family: "News Cycle", "Cantarell", sans-serif;
+  font-weight: bold;
+}
+
+.main-title-info .author {
+    font-size: 2.5em;
+}
+
 
 /*********************************************
  * HEADERS
@@ -138,6 +179,13 @@ body {
 
 .reveal h1 {
   text-shadow: none; }
+
+.reveal h1:first-child,
+.reveal h2:first-child {
+  text-decoration: underline;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
 
 /*********************************************
  * OTHER
@@ -493,10 +541,6 @@ div.input_area {
 }
 
 div.output_area {
-  /*
-  margin-left: auto;
-  margin-right: auto;
-  */
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -504,6 +548,36 @@ div.output_area {
 div.output_subarea {
   padding: 0px;
   max-width: 100%;
+}
+
+div.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90dvh;
+}
+
+div.splash p {
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+div.splash :last-child {
+    margin-bottom: unset;
+}
+
+div.side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+div.side-by-side div.left,
+div.side-by-side div.right {
+    max-width: 45dvw;
 }
 
 /*#################################
@@ -534,6 +608,27 @@ img.sbitem {
     width: 1.1em;
 }
 
+span.footnote,
+p.footnote,
+figcaption.footnote, {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+/* Separate two unrelated blocks of code so the backgrounds don't merge */
+div.code-separator {
+    margin-bottom: 0.5em;
+}
+
+/* Tables used for alignment */
+
+table.alignment-table td,
+table.alignment-table tr {
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
 
 /*################################
  * Fragments
@@ -562,6 +657,75 @@ img.sbitem {
     font-size: 0px;
 }
 
+/*****************************
+ * Custom highlighting
+ */
+
+span.pytest-pass {
+    font-weight: bold;
+    color: #269109;
+}
+
+span.pytest-bad {
+    color: #d10000;
+}
+
+span.pytest-error {
+    color: #d10000;
+    font-weight: bold;
+}
+
+span.pytest-good {
+    color: #269109;
+}
+
+span.pytest-ok {
+    font-weight: bold;
+}
+
+span.pytest-warn {
+    color: #c27e00
+}
+
+span.pytest-warning-count {
+    font-weight: bold;
+    color: #c27e00;
+}
+
+.reveal pre {
+    display: inline-block;
+    width: auto;
+}
+
+.reveal pre code
+{
+    display: inline-block;
+}
+
+.reveal pre code,
+.reveal pre tt {
+    font-size: 1.25em;
+    line-height: 1.1;
+}
+
+code.hljs, tt.hljs {
+    display: inline-block;
+    min-width: 60%;
+    background: #fff;
+}
+
+div.big-code pre code,
+div.big-code pre tt {
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+div.medium-code pre code,
+div.medium-code pre tt {
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+
 /****************************
  *  HACK
  *
@@ -576,4 +740,11 @@ code.lang-C {
 
 .emoji {
     font-family: Noto Color Emoji !important;
+}
+
+/** Speaker notes */
+
+div.speaker-controls-notes div.value {
+    line-height: 1.1 !important;
+    font-size: 0.9em !important;
 }
