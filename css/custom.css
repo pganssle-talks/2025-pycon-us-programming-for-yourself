@@ -329,6 +329,11 @@ img.screenshot {
     border: 2px solid;
     border-color: #909090;
     margin: 1em;
+    max-width: calc(min(90%, 90dvw));
+}
+
+img.mobile-screenshot {
+    max-height: 80dvh;
 }
 
 div.gallery {
@@ -338,7 +343,7 @@ div.gallery {
     flex-wrap: wrap;
 }
 
-div.gallery > div.gallery-item > img.screenshot {
+div.gallery > div.gallery-item > img {
     margin-top: 0.5em;
     margin-right: 0.5em;
     margin-right: 0.5em;
@@ -349,12 +354,16 @@ div.gallery.two-wide > div.gallery-item {
     width: calc(50% - 1.1em);
 }
 
-div.gallery.three-wide > img.screenshot {
-    width: calc(33% - 1.1em);
+div.gallery.three-wide > div.gallery-item > img {
+    max-width: calc(30dvw - 1.1em);
 }
 
-div.gallery.four-wide > img.screenshot {
-    width: calc(33% - 1.1em);
+div.gallery.three-wide > div.gallery-item {
+    max-width: calc(33dvw - 1.1em);
+}
+
+div.gallery.four-wide > img {
+    width: calc(25dvw - 1.1em);
 }
 
 div.gallery.two-high > div.gallery-item {
