@@ -1,7 +1,9 @@
 # Case Study: Chord Identification Trainer
 
+<div class="centered-container">
 <img src="images/screenshots/study_abstract_00.png"
      class="screenshot splash">
+</div>
 
 --
 
@@ -21,6 +23,7 @@
 
 # Feedback from your loves ones is fun
 
+<div class="centered-container">
 <div class="gallery two-high nospace-fragment disappearing-fragment fragment fade-out" data-fragment-index="0">
 <div class="gallery-item">
     <img src="images/screenshots/chord-trainer-v02-cat-hearts.png" class="screenshot"/>
@@ -53,12 +56,14 @@
              />
     </div>
 <div>
+</div>
 
 
 --
 
 # My son shows off his inner hacker
 
+<div class="centered-container">
 <img src="images/generated/hacker_kid.png"
      alt="A generated image of a kid in a hoodie sitting in a dark room working on a computer with green screen on black text"
      class="splash fragment disappearing-fragment nospace-fragment fade-out"
@@ -68,11 +73,13 @@
     <source src="videos/color_change_hack.webm"
             type="video/webm">
 </video>
+</div>
 
 --
 
 # Hacking the System: Part II
 
+<div class="centered-container">
 <video controls autoplay muted class="fragment disappearing-fragment nospace-fragment fade-out" data-fragment-index="0">
     <source src="videos/reset_hack.webm"
             type="video/webm">
@@ -84,10 +91,13 @@
      alt="A screenshot of the 'Session History Viewer', which shows the stats for each
          recent session."/>
 
+</div>
+
 --
 
 # You can use software to connect to those around you
 
+<div class="centered-container">
 <img src="images/screenshots/chord-trainer-video-00.png"
      class="screenshot splash fragment nospace-fragment disappearing-fragment fade-out"
      data-fragment-index="0">
@@ -95,6 +105,7 @@
 <img src="images/pictures/conference-photo.jpg"
      class="splash fragment nospace-fragment disappearing-fragment fade-in"
      data-fragment-index="0">
+</div>
 
 --
 
@@ -127,7 +138,8 @@ div.logo-entry img.logo {
 }
 
 </style>
-</style>
+
+<div class="centered-container">
 <img src="images/pictures/timepandamax_banner_like_and_subscribe.png"
      class="splash">
 
@@ -141,6 +153,4 @@ div.logo-entry img.logo {
         <a href="https://twitch.tv/timepanda920621">timepanda920621</a>
     </div>
 </div>
-
-<!-- TimePandaMax plug -->
-
+</div>

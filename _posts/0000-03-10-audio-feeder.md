@@ -134,38 +134,48 @@ RSS_item = """
 
 # Still manually run, but with more features
 
+<div class="centered-container">
 <img src="images/screenshots/audiobooks_v1.png"
      class="splash screenshot"
      />
+</div>
 
 --
 
 # Next version: Flask app
 
-<img src="images/screenshots/audio_feeder_00_list_entry.jpg"
-     class="splash screenshot fragment disappearing-fragment fade-out"
+<div class="centered-container fragment nospace-fragment disappearing-fragment fade-out"
      data-fragment-index="0"
+>
+<img src="images/screenshots/audio_feeder_00_list_entry.jpg"
+     class="splash screenshot"
      />
+</div>
 
-<div style="display:flex;">
+<div class="centered-container nospace-fragment fragment disappearing-fragment fade-in"
+     data-fragment-index="0"
+>
+<div class="side-by-side">
 
 <img src="images/screenshots/audio_feeder_01_list_qr.jpg"
-     class="splash screenshot nospace-fragment fragment disappearing-fragment fade-in"
-     data-fragment-index="0"
+     class="splash screenshot"
      />
 
 <img src="images/screenshots/audio_feeder_02_settings_pulldown.jpg"
-     class="splash screenshot nospace-fragment fragment disappearing-fragment fade-in"
+     class="splash screenshot"
      data-fragment-index="0"
      />
 
+</div>
 </div>
 
 --
 
 # Your applications can grow with you
 
-<div class="fragment disappearing-fragment nospace-fragment fade-out" data-fragment-index="0">
+<div style+"height: 80dvh">
+<div class="centered-container fragment disappearing-fragment fade-out" data-fragment-index="0">
+<div class="not-centered">
 
 ```
 $ tree --du -h
@@ -185,6 +195,7 @@ $ tree --du -h
 ```
 
 <br/>
+<br/>
 
 ```python
 >>> import audio_feeder
@@ -196,21 +207,28 @@ $ tree --du -h
 ```
 
 </div>
+</div>
 
-<div class="fragment fade-in" data-fragment-index="0">
+<div class="centered-container fragment nospace-fragment disappearing-fragment fade-in-and-out"
+     data-fragment-index="0">
+    <img src="images/screenshots/audio-feeder-gh.png"
+         class="splash screenshot"
+         />
+</div>
 
-<img src="images/screenshots/audio-feeder-gh.png"
-     class="splash screenshot fragment disappearing-fragment fade-in-and-out"
-     data-fragment-index="0"
-     />
-
+<div class="centered-container fragment nospace-fragment fade-in"
+     data-fragment-index="1">
 <img src="images/screenshots/audio-feeder-docker-gh.png"
-     class="splash screenshot fragment disappearing-fragment fade-in"
+     class="splash screenshot"
      data-fragment-index="1"
      />
 
-<i>Available at [https://github.com/pganssle/audio-feeder](https://github.com/pganssle/audio-feeder)</i>
 
+</div>
+
+<div class="fragment fade-in" data-fragment-index="0">
+    <i>Available at <a href="https://github.com/pganssle/audio-feeder">https://github.com/pganssle/audio-feeder</a></i>
+</div>
 </div>
 
 --
