@@ -142,8 +142,12 @@ I did figure out that he was doing that because a 5-year-old lacks a certain amo
 
 # Progress
 
-...
-
+<div class="centered-container">
+<video controls>
+    <source src="videos/chord_identification.webm"
+            type="video/webm">
+</video>
+</div>
 
 --
 
