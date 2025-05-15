@@ -3,6 +3,9 @@ docs/
 docs
 gh_pages/
 
+raw/
+unused/
+
 # Bundle stuff
 .vendor/
 .bundle/
