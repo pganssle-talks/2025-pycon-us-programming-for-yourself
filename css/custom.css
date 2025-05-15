@@ -408,19 +408,19 @@ div.gallery.two-wide > div.gallery-item {
 }
 
 div.gallery.three-wide > div.gallery-item > img {
-    max-width: calc(30dvw - 1.1em);
+    max-width: calc(30dvw - 2em);
 }
 
 div.gallery.three-wide > div.gallery-item {
-    max-width: calc(33dvw - 1.1em);
+    max-width: calc(33dvw - 2em);
 }
 
 div.gallery.four-wide > img {
-    width: calc(25dvw - 1.1em);
+    width: calc(25dvw - 2em);
 }
 
 div.gallery.two-high > div.gallery-item {
-    max-height: calc(40dvh - 1.1em);
+    max-height: calc(40dvh - 2em);
 }
 
 
