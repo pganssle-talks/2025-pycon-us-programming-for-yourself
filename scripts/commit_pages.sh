@@ -5,6 +5,14 @@ WORKTREE_LOCATION="docs"
 PRIMARY_BRANCH="master"
 HOME="$(pwd)"
 
+# Copy Git user configuration from the main repo to the worktree
+GIT_USER_NAME=$(git -C "${HOME}" config user.name || echo "Pages Updater")
+GIT_USER_EMAIL=$(git -C "${HOME}" config user.email || echo "noreply@example.com")
+
+# Set Git configuration for this repository
+git config user.name "${GIT_USER_NAME}"
+git config user.email "${GIT_USER_EMAIL}"
+
 # If no changes are necessary, we don't have to check the error conditions
 cd "${WORKTREE_LOCATION}"
 if [ -z "$(git status --porcelain)" ]; then
