@@ -35,7 +35,16 @@ if [ ! -z "$(git status --porcelain)" ]; then
     exit 2
 fi
 
+if [ -f ".gitignore.pages" ]; then
+    GITIGNORE_LOC="$(realpath .gitignore.pages)"
+else
+    GITIGNORE_LOC="$(realpath .gitignore)"
+fi
+
 cd "${WORKTREE_LOCATION}"
+
+cp "$GITIGNORE_LOC" ".gitignore"
+
 git add -u
 
 UNTRACKED_FILES_STR="$(git ls-files -o --exclude-standard)"
