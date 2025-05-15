@@ -1,0 +1,142 @@
+# Not every project is big!
+
+<div class="centered-container">
+<figure>
+<img src="images/figures/gym-calibration.png"
+    class="figure splash"/>
+
+<figcaption>The cable machines in the Google Cambridge gym have ~2.2x leverage over the nominal weights</figure>
+</figure>
+</div>
+
+--
+
+# Not every project is big!
+
+## Example: Podcast normalization
+
+<div class="centered-container">
+<div class="gallery two-wide">
+<div class="gallery-item">
+    <img src="images/figures/seattle-library-podcast-2014-10-28.png" class="figure"/>
+</div>
+<div class="gallery-item">
+    <img src="images/figures/triunvirato-podcast-2015-03-31.png" class="figure"/>
+</div>
+</div>
+
+<div class="gallery">
+<div class="gallery-item">
+<pre>                                      |                         dBFS                         |
+| Name                                |   True   |  Start   |  Middle  |   End    |  Random  |
+|=====================================|==========|==========|==========|==========|==========|
+|10-percent-of-brain                  |<b>  -33.65  </b>|  -36.78  |  -39.18  |  -36.78  |<font color="#10BA13">  -33.43  </font>|
+|triunviratopodcast6-3-31-2015        |<b>  -26.63  </b>|  -31.13  |  -33.73  |  -31.13  |<font color="#10BA13">  -26.64  </font>|
+|ancient-greek-music                  |<b>  -20.45  </b>|<font color="#F61010">  -82.81  </font>|  -16.94  |<font color="#F61010">  -82.81  </font>|<font color="#10BA13">  -20.44  </font>|
+|serial-episode-07                    |<b>  -19.04  </b>|<font color="#10BA13">  -19.13  </font>|  -20.78  |<font color="#10BA13">  -19.13  </font>|<font color="#10BA13">  -18.99  </font>|
+|seattle-library-podcast-2014-10-28   |<b>  -34.13  </b>|  -28.08  |<font color="#10BA13">  -33.97  </font>|  -28.08  |<font color="#10BA13">  -34.06  </font>|
+|spy-museum-podcast-2014-11-07        |<b>  -21.97  </b>|<font color="#F61010">  -42.74  </font>|  -17.81  |<font color="#F61010">  -42.74  </font>|<font color="#10BA13">  -22.00  </font>|
+</pre>
+</div>
+</div>
+</div>
+
+
+--
+
+# Not every project is big!
+
+<img src="images/screenshots/anki-nightingale-00.png"
+    class="fragment mobile-screenshot screenshot disappearing-fragment nospace-fragment fade-out"
+    data-fragment-index="0"/>
+<img src="images/screenshots/anki-nightingale-01-sentence.png"
+    class="fragment mobile-screenshot screenshot disappearing-fragment nospace-fragment fade-in-and-out"
+    data-fragment-index="0"/>
+<img src="images/screenshots/anki-nightingale-02-sentence-english.png"
+    class="fragment mobile-screenshot disappearing-fragment nospace-fragment screenshot fade-in-and-out"
+    data-fragment-index="1"/>
+<img src="images/screenshots/anki-nightingale-03-settings.png"
+    class="fragment mobile-screenshot screenshot fade-in"
+    data-fragment-index="2"/>
+
+--
+
+# Not every project is big!
+
+<div
+    class="fragment disappearing-fragment nospace-fragment fade-out"
+    data-fragment-index="0">
+
+```python
+SENTENCE_PROMPT: Final[str] = """\
+You are an expert Spanish teacher and lexicographer, whose specialty is designing excellent example sentences that show
+off the range of uses of a given word.
+
+I am going to give you valid JSON representing a term ("term") in Spanish and its meaning in English ("meaning"). I
+would like you to generate valid JSON containing 4 example sentences in idiomatic Spanish that use the term accompanied
+by a translation from the original Spanish into English; the example sentences should use the sense of the term that has
+the meaning specified by the English meaning. When the word is a verb, select different moods and tenses in the
+different sentences. The translations do not need to be word-for-word translations, it is more important that they
+capture the general spirit of the original Spanish.
+
+In some of your example sentences, it would be a bonus if they contain useful or interesting facts.
+
+Example:
+========
+INPUT:
+----------
+{
+    "term": "casa",
+    "part_of_speech": "nf",
+    "meaning": "house"
+}
+
+OUTPUT:
+--------------
+{
+    "term": "casa",
+    "meaning": "house",
+    "examples": [
+        {
+            "spanish": "La casa de mi abuela está en el campo.",
+            "english": "My grandmother's house is in the country."
+        },
+        {
+
+...
+"""
+```
+
+<div><em>You know what's really good at languages? A Large Language Model</em></div>
+
+</div>
+
+<div class="gallery three-wide fragment nospace-fragment fade-in" data-fragment-index="0">
+    <div class="gallery-item">
+        <img src="images/screenshots/anki-nightingale-04-distinct-sounds.png"
+             class="screenshot mobile-screenshot"
+        >
+    </div>
+    <div class="gallery-item">
+        <img src="images/screenshots/anki-nightingale-05-full-moon.png"
+             class="screenshot mobile-screenshot"
+        >
+    </div>
+    <div class="gallery-item">
+        <img src="images/screenshots/anki-nightingale-06-borges.png"
+            class="fragment mobile-screenshot screenshot fade-in"
+            data-fragment-index="2"
+        >
+    </div>
+</div>
+
+--
+
+<h1> <span class="fragment nospace-fragment disappearing-fragment fade-out" data-fragment-index="1">Not every project is big!</span>
+<span class="fragment nospace-fragment fade-in" data-fragment-index="1">Sometimes your small projects <b>become<b> big</span></h1>
+
+<div>
+<img src="images/screenshots/anki-textual-lite-word-merger.svg"
+     class="screenshot splash">
+<div class="caption">Using Textual to create a proper UI to resolve word conflicts</div>
+ </div>

@@ -1,13 +1,14 @@
-_site
-scripts/
+raw/
+unused/
 
+# Scripting stuff (irrelevant in pages)
 Makefile
+scripts/
 
 # Bundle stuff
 .vendor/
 .bundle/
-Gemfile.lock
-Gemfile
+.jekyll-cache
 
 # Python stuff
 __pycache__
