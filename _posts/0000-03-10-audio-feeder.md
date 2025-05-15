@@ -241,13 +241,14 @@ $ tree --du -h
 
 --
 
+# Adding features for yourself
+
 <style>
 img.segfig {
     height: 80dvh !important;
 }
 </style>
 
-# Adding features for yourself
 
 <img src="images/screenshots/audio_feeder_03_feeds.jpg"
      class="splash screenshot fragment disappearing-fragment fade-out"
