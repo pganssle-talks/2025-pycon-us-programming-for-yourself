@@ -18,7 +18,6 @@ The way it works is that the child does 5 sessions of 25 identifications every d
 <img src="images/screenshots/chord-trainer-v00-red-yellow.png"
      class="screenshot splash fragment nospace-fragment disappearing-fragment fade-out"
      data-fragment-index="0">
-
 <img src="images/screenshots/chord-trainer-v02-cat-faces.png"
      class="screenshot splash fragment disappearing-fragment nospace-fragment fade-in"
      data-fragment-index="0"
@@ -132,7 +131,6 @@ I did figure out that he was doing that because a 5-year-old lacks a certain amo
 <img src="images/screenshots/chord-trainer-video-00.png"
      class="screenshot splash fragment nospace-fragment disappearing-fragment fade-out"
      data-fragment-index="0">
-
 <img src="images/pictures/conference-photo.jpg"
      class="splash fragment nospace-fragment disappearing-fragment fade-in"
      data-fragment-index="0">

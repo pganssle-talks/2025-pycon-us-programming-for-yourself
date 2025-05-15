@@ -1,19 +1,19 @@
 # Case Study: Audiofeeder
 
+<div class="centered-container">
 <img src="images/screenshots/antennapod_queue_screenshot_base.png"
      class="splash mobile-screenshot screenshot nospace-fragment fragment disappearing-fragment fade-out"
      data-fragment-index="0"
      />
-
 <img src="images/screenshots/antennapod_queue_screenshot_books_and_english.png"
      class="splash mobile-screenshot screenshot nospace-fragment fragment disappearing-fragment fade-in-and-out"
      data-fragment-index="0"
      />
-
 <img src="images/screenshots/antennapod_queue_screenshot_spanish.png"
-     class="splash mobile-screenshot screenshot nospace-fragment fragment disappearing-fragment fade-in"
+     class="splash mobile-screenshot screenshot nospace-fragment fragment fade-in"
      data-fragment-index="1"
      />
+</div>
 
 --
 
@@ -249,32 +249,26 @@ img.segfig {
 }
 </style>
 
-
 <img src="images/screenshots/audio_feeder_03_feeds.jpg"
      class="splash screenshot fragment disappearing-fragment fade-out"
      data-fragment-index="0"
      />
-
 <img src="images/figures/chapter-segmentation-base.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
      data-fragment-index="0"
      />
-
 <img src="images/figures/chapter-segmentation.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
      data-fragment-index="1"
      />
-
 <img src="images/figures/chapter-segmentation-greedy.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
      data-fragment-index="2"
      />
-
 <img src="images/figures/chapter-segmentation-greedy-red.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
      data-fragment-index="3"
      />
-
 <img src="images/figures/chapter-segmentation-optimal.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
      data-fragment-index="4"
