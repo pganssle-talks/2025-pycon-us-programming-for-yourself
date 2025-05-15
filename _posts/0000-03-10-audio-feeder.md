@@ -181,63 +181,19 @@ RSS_item = """
 
 # Your applications can grow with you
 
-<div style+"height: 80dvh">
-<div class="centered-container fragment disappearing-fragment fade-out" data-fragment-index="0">
-<div class="not-centered" style="width: 100%">
-
-```
-$ tree --du -h
-[ 46M]  .
-├── [ 38M]  db.sqlite
-└── [8.1M]  yaml_db
-    ├── [105K]  authors.yml
-    ├── [105K]  authors.yml.bak
-    ├── [3.5M]  books.yml
-    ├── [3.5M]  books.yml.bak
-    ├── [466K]  entries.yml
-    ├── [466K]  entries.yml.bak
-    ├── [  23]  series.yml
-    ├── [  23]  series.yml.bak
-    ├── [  23]  users.yml
-    └── [  23]  users.yml.bak
-```
-
-<br/>
-<br/>
-
-```python
->>> import audio_feeder
->>> %timeit audio_feeder.database_handler.load_database(Path("yaml_db"))
-6.29 s ± 333 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-
->>> %timeit audio_feeder.database_handler.load_database(Path("db.sqlite"))
-936 ms ± 96.4 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-```
-
-</div>
-</div>
-
-<div class="centered-container fragment nospace-fragment disappearing-fragment fade-in-and-out"
-     data-fragment-index="0">
+<div class="centered-container">
     <img src="images/screenshots/audio-feeder-gh.png"
-         class="splash screenshot"
+         class="splash screenshot fragment nospace-fragment disappearing-fragment fade-out"
+         data-fragment-index="0"/>
+    <img src="images/screenshots/audio-feeder-docker-gh.png"
+         class="splash screenshot fragment fade-in nospace-fragment"
+         data-fragment-index="0"
          />
+    <div class="caption">
+        <i>Available at <a href="https://github.com/pganssle/audio-feeder">https://github.com/pganssle/audio-feeder</a></i>
+    </div>
 </div>
 
-<div class="centered-container fragment nospace-fragment fade-in"
-     data-fragment-index="1">
-<img src="images/screenshots/audio-feeder-docker-gh.png"
-     class="splash screenshot"
-     data-fragment-index="1"
-     />
-
-
-</div>
-
-<div class="fragment fade-in" data-fragment-index="0">
-    <i>Available at <a href="https://github.com/pganssle/audio-feeder">https://github.com/pganssle/audio-feeder</a></i>
-</div>
-</div>
 
 --
 
