@@ -11,6 +11,8 @@
 
 Notes:
 
+T: 18m30s
+
 OK, so I've told you about a few of my big projects, but I don't want to leave you with the impression that every project you do has to be some big thing. Some of my most satisfying uses of programming for myself are times when I had a question that I wanted to answer, and I could use a computer to do it. For example, a few years ago I noticed that when I was at the gym at Google, I could lift like a ton of weight on the cable machines. 180 pound tricep pushdowns, no problem. For some reason, when I am travelling, I have to set the rack like less than half of that.
 
 There are two obvious conclusions here: either Google offices make you extremely strong or traveling makes you extremely weak. But then I hit upon a third, clearly less likely option, which is that the pulleys on cable machines might be providing leverage. I wanted to quantify this, so I got a luggage scale and hooked it up to the cable machine, then figured out how much weight it was experiencing with each plate. I plugged this into a colab, which is like a jupyter notebook, but easier for me to share with other people at Google, and found that at the Cambridge gym the cable machine has a 2.2x leverage!
@@ -49,6 +51,8 @@ There are two obvious conclusions here: either Google offices make you extremely
 
 Notes:
 
+T: 20m
+
 Another example like this is a little project I did about 14 years ago. Back then, podcasts weren't nearly as professionally produced as they are today, and I found that there was an incredible amount of inconsistency between how they were mastered. Some of them were really loud and some of them were really quiet. But the thing is, they are pretty consistent throughout, and they're also very long files, so I was wondering how well you could estimate the amount of correction to the levels you would need to apply to normalize the audio *without* reading the whole file.
 
 I found that as you might expect, reading from the beginning or end of the file was not that consistent, because they usually have intro or outro music or something that is different from the bulk of the file. The middle was a lot better, but not consistently getting to the "true value", even for the relatively small sample I tested.
@@ -75,6 +79,8 @@ However, I found that if you just took samples from the file randomly, you would
 </div>
 
 Notes:
+
+T: 21m15s
 
 Another little project I have is that I use Anki all the time, which is a spaced repetition flash card system. When I learned that you could put Javascript in the cards, it was somewhat dangerous knowledge for me, since it let me start expanding what I could do with cards.
 
@@ -139,6 +145,8 @@ OUTPUT:
 
 Notes:
 
+T: 21m30s
+
 And it turns out that that's something LLMs are *really* good at, so I created this prompt to take words and their meanings and generate sentences. And the part of this I'm most proud of is this line, which tells the LLM that if the sentence can double as an interesting fact, go for it.
 
 --
@@ -168,6 +176,8 @@ And it turns out that that's something LLMs are *really* good at, so I created t
 
 Note:
 
+T: 23m
+
 And you can see it works really well! It tends to give me a lot of interesting animal facts. Mostly they seem real, too, some of them are made up. I could have sworn that this full moon one was going to be made up, but actually that one appears to be real.
 
 But now I'm far enough along in learning Spanish that I've started doing a lot of reading, and reading is a big source of new vocabulary, and I wanted an easy way to turn those into flash cards, so I wrote a script that extracts annotations from my e-reader, and then takes the sentences that the word appeared in and turns that into an example sentence.
@@ -186,5 +196,7 @@ And as you can see, I also have it generating a little bit of source information
  </div>
 
  Notes:
+
+ T: 23m30s
  
  This was all well and good, but then I found that with all these new words coming in, I was seeing a lot of conflicts with words already in the deck, and I was spending a lot of time resolving these conflicts, so I whipped up this little user interface with Textual to make it easier to resolve the conflicts. And you know what I'm realizing now? This slide was supposed to be all about little projects, but uh.. that title isn't exactly appropriate at this point is it? Because actually what I'm demonstrating here is the way that small projects have a way of turning into big projects when you are really using the things you're working on.

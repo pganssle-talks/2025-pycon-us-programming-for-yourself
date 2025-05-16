@@ -59,6 +59,10 @@ div.wrap-up {
 </div>
 </div>
 
+Notes:
+
+T: 29m30s
+
 --
 
 # More info
@@ -89,3 +93,7 @@ div.wrap-up {
 
 </div>
 </div>
+
+Notes:
+
+T: 30m

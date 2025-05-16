@@ -9,6 +9,8 @@
 
 Notes:
 
+T: 1m:30s
+
 That you are a wizard. I mean, sorcerer.
 
 Think about it for a second, you invoke arcane commands, you summon daemons to do your bidding. You can perform unprecedented acts of divination. But the people in the world of Harry Potter, er.. I mean, Harvey Palmer... are not training the students at... uh.. Pigswart to be corporate drones, only using their magic to deliver shareholder value — magic suffuses their daily life.
@@ -29,6 +31,8 @@ Similarly, I think it's a bit sad that more people build impressive skill portfo
 </div>
 
 Notes:
+
+T: 2m30s
 
 Some time ago I came across an article that proposed a metaphor that really resonated with me, which is apps as home-cooked meals. In this article, Robin Sloan talks about a messaging app that he built and maintains just for his family's use. The suggestion here is that despite the fact that none of us thinks anything of going out and preparing a meal for your family, and in fact many of us get great joy from it, despite the fact that we could just go to a restaurant and have something prepared by a professional chef or a whole kitchen crew! Or we could buy pre-packaged food with economies of scale!
 
