@@ -25,6 +25,8 @@
 
 Notes:
 
+T: 30s
+
 Hi everyone, I'm Paul Ganssle and for my day job, I'm a software developer at Google, but as will soon become clear, it turns out that when my work day is over, I actually continue to be a software developer, believe it or not, and that's actually the subject of today's talk: the benefits of using your technical skills for your own pursuits!
 
 Because here's the thing: we live in a technologically advanced world, and as Arthur C. Clarke said, any sufficiently advanced technology is essentially indistinguishable from magic, which means...

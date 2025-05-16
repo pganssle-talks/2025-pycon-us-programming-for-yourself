@@ -13,3 +13,7 @@
 </div>
 
 https://pganssle.github.io/HaptiCap/
+
+Notes:
+
+T: 27m40s

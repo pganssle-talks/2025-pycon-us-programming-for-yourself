@@ -17,6 +17,8 @@
 
 Notes:
 
+T: 11m
+
 OK, so the next project I'd like to show you is something that I built primarily for myself, but understanding why I care about it takes a bit of explanation. You see, I listen to a lot of audio content, a mix of audiobooks and podcasts. Specifically, I usually try to listen to about an hour of one audiobook, then about an hour of a podcast, then about an hour of a different audiobook, then repeating. And about 18 months ago I started learning Spanish, so now I also like to alternate content between English and Spanish. I do it this way because I find that interleaving my content and stretching it out over many days helps me retain it better when compared to "binging" all in a row, and not getting a chance to sleep on the ideas presented before returning to them later.
 
 The problem, however, is that a lot of applications treat podcasts and audiobooks as fundamentally different things. They expect you to go to an audiobook application to listen to audiobooks and then switch to a podcast application to listen to podcasts, but about 10 years ago I realized that if I just have audio files on a computer, I can create an RSS feed for them and turn all my audiobooks into podcasts, so they would work with whatever podcast player I want!
@@ -30,6 +32,8 @@ The problem, however, is that a lot of applications treat podcasts and audiobook
      />
 
 Notes:
+
+T: 11m15s
 
 The first version of this was janky as hell. I would from time to time run a script that generates an HTML page with QR codes for the RSS feeds on it. As you can see there was no CSS here. No pagination, it was just a bare list of stuff.
 
@@ -149,6 +153,8 @@ RSS_item = """
 
 Notes:
 
+T: 11m45s
+
 As you can see from the code, not only was I manually running it, I was also manually adding the book information, but it worked! It generated a page and a rudimentary RSS feed that I could use.
 
 --
@@ -162,6 +168,8 @@ As you can see from the code, not only was I manually running it, I was also man
 </div>
 
 Notes:
+
+T: 12m15s
 
 I think pretty soon after that (I have no git history this early on in the project because it was all very yolo), I got tired of manually adding all the book information, and the number of books I had was getting unwieldy for a single page, so I added something that automatically parses the book names and authors from the folder names, retrieves descriptions from Google books, and breaks them up into multiple pages. This was still something I ran manually, and it was still generating a static page, but it was considerably more ergonomic.
 
@@ -196,6 +204,8 @@ I think pretty soon after that (I have no git history this early on in the proje
 
 Notes:
 
+T: 12m45s
+
 A few years after that, I didn't want to keep having to manually run the updater, and I realized that I wanted some more dynamic features that wouldn't fit with a static site. Despite having worked as a developer professionally for several years at this point, I barely knew how to make any kind of dynamic web site and I didn't know how to use SQL, but I had an interesting problem to solve, so over Christmas break I looked up how to use Flask and created and deployed a version of the app with nice mobile support, with different options for sorting and pagination, and that automatically updated itself with some cadence.
 
 --
@@ -217,7 +227,9 @@ A few years after that, I didn't want to keep having to manually run the updater
 
 Notes:
 
-I've been maintaining some version of this app for a decade now, and I think it's a striking example of how your projects and your abilities can grow in a mutually-reinforcing way. When this project started causing problems with updates because of how I was deploying it, it encouraged me to learn to use docker so that I could isolate this from my system. Similarly, when I started doing a lot more work with SQL during my job, I finally felt confident migrating this system away from using a giant YAML file as a "database" to using sqlite.
+T: 14:00
+
+I've been maintaining some version of this app for a decade now, and I think it's a striking example of how your projects and your abilities can grow in a mutually-reinforcing way. When this project started causing problems with updates because of how I was deploying it, it encouraged me to learn to use docker so that I could isolate this from my system. Similarly, when I started doing a lot more work with SQL during my job, I finally felt confident migrating this system away from the previous system, which was using a giant YAML file as a "database" to something based on SQLlite
 
 --
 
@@ -256,7 +268,9 @@ img.segfig {
 
 Notes:
 
-The other thing that I think this app demonstrates is how valuable it is to build something that you can tailor to your own needs. For example, eagle-eyed viewers may have noticed that in the latest version, there are actually 3 RSS feeds. The reason for this is that I get audiobooks from various sources, and they're not always in the exact same format. Sometimes they're one giant file, sometimes they are broken up into a million 5 minute-long files, neither of which really works for me. There is often chapter information available, but that mainly just helps with the really long files, and if I break them up along chapter lines, I'm likely to get something where there are a lot of too-short files.
+T: 17m00s
+
+The other thing that I think this app demonstrates is how valuable it is to build something that you can tailor to your own needs. For example, eagle-eyed viewers may have noticed that in the latest version, there are actually 3 RSS feeds. The reason for this is that I get audiobooks from various sources, and they're not always in the exact same format. Sometimes they're one giant file, sometimes they are broken up into a million 5 minute-long files, neither of which really works for me. There is often chapter information available, so this would be an example of some book with chapter metadata, the units are all in minutes.
 
 Eventually I added what is probably my favorite feature of the whole application, which breaks up big files and merges small files until I get something that is made up of chunks of about an hour. The naïve way to do this would be to just greedily combine files until you get to an hour, but this leaves you with some sub-optimal splits, including some that are way too short.
 
