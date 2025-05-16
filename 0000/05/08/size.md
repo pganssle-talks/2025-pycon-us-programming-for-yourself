@@ -46,6 +46,7 @@
 
 # Not every project is big!
 
+<div class="centered-container">
 <img src="images/screenshots/anki-nightingale-00.png"
     class="fragment mobile-screenshot screenshot disappearing-fragment nospace-fragment fade-out"
     data-fragment-index="0"/>
@@ -56,18 +57,19 @@
     class="fragment mobile-screenshot disappearing-fragment nospace-fragment screenshot fade-in-and-out"
     data-fragment-index="1"/>
 <img src="images/screenshots/anki-nightingale-03-settings.png"
-    class="fragment mobile-screenshot screenshot fade-in"
+    class="fragment mobile-screenshot screenshot nospace-fragment fade-in"
     data-fragment-index="2"/>
+</div>
 
 --
 
 # Not every project is big!
 
-<div
-    class="fragment disappearing-fragment nospace-fragment fade-out"
-    data-fragment-index="0">
+<div>
 
-```python
+<pre class="code-wrapper">
+<code data-trim data-noescape class="language-python">
+<span class="fragment semi-fade-out" data-fragment-index="0">
 SENTENCE_PROMPT: Final[str] = """\
 You are an expert Spanish teacher and lexicographer, whose specialty is designing excellent example sentences that show
 off the range of uses of a given word.
@@ -79,7 +81,8 @@ the meaning specified by the English meaning. When the word is a verb, select di
 different sentences. The translations do not need to be word-for-word translations, it is more important that they
 capture the general spirit of the original Spanish.
 
-In some of your example sentences, it would be a bonus if they contain useful or interesting facts.
+</span><span class="fragment custom bolds" data-fragment-index="0">In some of your example sentences, it would be a bonus if they contain useful or interesting facts.</span>
+<span class="fragment semi-fade-out" data-fragment-index="0">
 
 Example:
 ========
@@ -105,13 +108,21 @@ OUTPUT:
 
 ...
 """
-```
+</span>
+</code>
+</pre>
 
 <div><em>You know what's really good at languages? A Large Language Model</em></div>
 
 </div>
 
-<div class="gallery three-wide fragment nospace-fragment fade-in" data-fragment-index="0">
+--
+
+<!-- .slide: data-transition="none" -->
+
+# Not every project is big!
+
+<div class="gallery three-wide">
     <div class="gallery-item">
         <img src="images/screenshots/anki-nightingale-04-distinct-sounds.png"
              class="screenshot mobile-screenshot"

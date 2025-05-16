@@ -23,94 +23,51 @@
 
 # LLMs make the easy stuff basically free
 
-<style>
-div.wide-code pre.code-wrapper {
-    overflow-x: clip;
-    max-width: 45dvw;
-}
-
-</style>
-
 <div class="centered-container">
 <div class="side-by-side">
 
-<div class="left wide-code" style="margin-right: 3em;">
+<div class="left-container left">
 <b>Prompt</b>
 
-````markdown
-Please write me a Python script that takes a spreadsheet in this format as input:
+<blockquote>
 
-```
-Class	Child	Parent 1 Name	Parent 1 Email	Parent 1 Phone	Parent 2	Parent 2 Email	Parent 2 Phone
-T1	Johnson, Thomas	Monica Johnson	monica.johnson@example.com	845-555-7632	Derek Johnson	derekjohnson@example.com	617-555-8291
-T1	Rivera, Sophia	Elena Martinez	emartinez@example.com	781-555-4193	Miguel Rivera	miguelrivera@example.com	781-555-6047
-```
+Please write me an imagemagick or other command line command that takes a
+number of images and removes a section from the middle of it (along the y
+axis). So if I have an image that is 500 pixels tall, and I specify `FROM=200`
+and `TO=250`, I want the result to be an image that is 450 pixels tall (because
+50 rows of pixels have been removed), and the missing section should start 200
+pixels from the top and go until 250 pixels from the top.
 
-The output of this should be a `.vcf` contact in the vCard format containing all
-the selected contacts; there should also be an option to output one file per
-classroom, or individual files. You should be able to specify the output file; for
-configurations that generate more than one file, a separate input `--output-dir`
-should be specified, and this option should be mutually exclusive with `--output`.
-
-It should be possible to filter the selected contacts by class (allowing the
-`--class parameter` to the script to be specified more than once to include more
-than one class). It should also allow specifying --category any number of times,
-which would set values for the `CATEGORY` of every member in the output.
-
-To accomplish this, I recommend:
-
-- Parse each line into `Child` and `Parent` objects (use frozen dataclasses for
-  these), where `Parent` has attributes email and phone, and `Child` has attribute
-  classroom, where `classroom` is one of T1, T2, P1, P2, PK. When sorting by
-  `classroom`, it should sort in that order.
-
-- Construct a mapping between `Parent` and a set of `Child` objects, so that we
-  have an association between parents and their children. A given Parent may have
-  more than one child.
-
-...
-````
+</blockquote>
 
 </div>
-<div class="right">
+<div class="right left-container">
 
 <b>Result</b>
 
 ```bash
-$ uv run generate_vcard.py school-contacts.tsv --category=Boston \
-                                               --output-mode=per-class \
-                                               --output-dir=output-classes/
-$ tree output-classes
-output-classes/
-├── P1.vcf
-├── P2.vcf
-├── PK.vcf
-├── T1.vcf
-└── T2.vcf
+#!/bin/bash
 
-1 directory, 5 files
-```
+FROM=200
+TO=250
 
-<br/>
+for img in "$@"; do
+  filename=$(basename -- "$img")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
 
-```bash
-$ uv run generate_vcard.py school-contacts.tsv --category=Boston \
-                                               --output-mode=per-parent \
-                                               --output-dir=output-example/
+  # Calculate bottom section height (total height minus TO)
+  height=$(identify -format "%h" "$img")
+  bottom_height=$((height - TO))
 
-$ cat output-parents/Vorkosigan,Aral.vcf
-BEGIN:VCARD
-VERSION:3.0
-CATEGORIES:Boston
-EMAIL;TYPE=INTERNET,HOME:aral.vorkosigan@example.mil
-FN:Aral Vorkosigan
-ITEM1.X-ABLABEL:_$!<Spouse>!$_
-ITEM1.X-ABRELATEDNAMES:Cordelia Naismith
-ITEM2.X-ABLABEL:_$!<Child>!$_
-ITEM2.X-ABRELATEDNAMES:Miles Naismith Vorkosigan
-N:Vorkosigan;Aral;;;
-TEL;TYPE=CELL:+1 999-555-1111
-END:VCARD
+  # Extract top and bottom sections and combine
+  convert "$img" \
+    -gravity North -crop x${FROM}+0+0 \
+    \( "$img" -gravity South -crop x${bottom_height}+0+0 \) \
+    -append "${filename}_trimmed.${extension}"
+
+  echo "Processed $img -> ${filename}_trimmed.${extension}"
+done
 ```
 
 </div>
@@ -131,7 +88,7 @@ END:VCARD
 
 
 <div class="gallery two-wide">
-<div class="gallery-item big-code">
+<div class="gallery-item medium-code left-container">
 
 <h3>Input</h3>
 
@@ -145,7 +102,7 @@ END:VCARD
 ```
 
 </div>
-<div class="gallery-item medium-code">
+<div class="gallery-item medium-code left-container">
 
 <h3>Output</h3>
 
@@ -171,39 +128,4 @@ END:VCARD
 
 https://www.harihareswara.net/posts/2022/speech-to-text-with-whisper-how-i-use-it-why/
 
-</div>
-
---
-
-# General advice
-
-<style>
-
-div.bigger-uls li {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 3rem;
-}
-
-div.bigger-uls li li {
-    margin-left: 2rem;
-}
-
-</style>
-
-<div class="centered-container bigger-uls">
-<ul>
-    <li class="fragment fade-in">LLMs are improving rapidly</li>
-    <li class="fragment fade-in">LLMs can get you started really quickly on new technologies</li>
-    <li class="fragment fade-in">
-    Some stuff I use LLMs for while coding:
-        <ul>
-            <li>Generate boilerplate</li>
-            <li>Write one-liners and small scripts</li>
-            <li>Understanding long error messages</li>
-            <li>Finding dumb mistakes</li>
-            <li>Generating tests</li>
-        </ul>
-    </li>
-</ul>
 </div>

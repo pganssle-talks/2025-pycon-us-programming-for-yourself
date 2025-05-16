@@ -634,6 +634,19 @@ table.alignment-table tr {
  * Fragments
  */
 
+/* Custom class to bold fragments */
+/* use by adding "fragment custom bolds" */
+.reveal .slides > section .fragment.bolds, .fragment.bolds {
+    font-weight: normal;
+    visibility: visible;
+    opacity: 1;
+    will-change: font-weight;
+}
+
+.reveal .slides > section .fragment.bolds.visible, .fragment.bolds.visible {
+    font-weight: bold;
+}
+
 /* Custom class for fragments that disappear */
 
 .disappearing-fragment.fragment.fade-out.visible {

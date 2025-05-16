@@ -101,30 +101,6 @@ Brings a tear to your eye to see the next generation of hacker growing up before
 
 --
 
-# Hacking the System: Part II
-
-<div class="centered-container">
-<video controls autoplay muted class="fragment disappearing-fragment nospace-fragment fade-out" data-fragment-index="0">
-    <source src="videos/reset_hack.webm"
-            type="video/webm">
-</video>
-
-<img src="images/screenshots/chord-trainer-v03-session-history-viewer.png"
-     class="splash screenshot nospace-fragment fragment fade-in"
-     data-fragment-index="0"
-     alt="A screenshot of the 'Session History Viewer', which shows the stats for each
-         recent session."/>
-
-</div>
-
-Notes:
-
-That didn't stop my son, though! He also discovered that I had no way of knowing whether or not the chord trainer had gotten reset — and the rule for going to the next level was that he had to get 4 perfect scores *in a row*. So he would just do it over and over again, resetting any time he got one wrong until he got 25 perfect in a row.
-
-I did figure out that he was doing that because a 5-year-old lacks a certain amount of guile, but incidentally I was working on a session history viewer feature /anyway/, which eliminated this little hack.
-
---
-
 # You can use software to connect to those around you
 
 <div class="centered-container">
