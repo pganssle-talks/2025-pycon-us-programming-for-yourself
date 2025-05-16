@@ -112,6 +112,14 @@ Brings a tear to your eye to see the next generation of hacker growing up before
      data-fragment-index="0">
 </div>
 
+Notes:
+
+The other thing that's great about this project is that it's given me lots of opportunities to connect with my son. At some point I wanted to make a little video to put on YouTube explaining to people how to use the app, and my son was super excited to do it together, he was super excited to be on a Youtube channel and to show off that he knew all the rules and that he was mastering chord identification.
+
+And last March, I put together a presentation about this project that was given at the NERD Summit in western Massachusetts, and my son got to join me on stage as part of the talk, which was really fun­— he got to feel the pride of his accomplishments with his first time presenting at a conference, plus it didn't hurt that we got to stay in a hotel.
+
+With this project in particular, I am often asked whether it's something I'd like to start selling or build a business around, and my answer is basically always no. I'm not saying it would be wrong or bad to make money from my work, but I don't want to worry about prioritizing user features, or features that drive engagement or retention. I am happy to make this available and use it to connect with my family. Though I have started to get a number of other parents contacting me saying that they've been using the app, and it is nice to know that other families are getting some joy out of it as well.
+
 --
 
 # Progress
@@ -122,6 +130,10 @@ Brings a tear to your eye to see the next generation of hacker growing up before
             type="video/webm">
 </video>
 </div>
+
+Notes:
+
+OK, so at this point, it would be unfair of me to tell you that I built this app 2 years ago and then not tell you how it's been going. I will not sugar-coat this, I would say it's going OK. He can consistently identify 13 chords, and he's /really/ good at it, as you'll see in the video. He doesn't seem to be identify individual notes, though according to the book that should just start happening naturally, so I don't know if he will actually acquire absolute pitch from this or not, but what he can do is already quite impressive, take a look:
 
 --
 
@@ -163,3 +175,7 @@ div.logo-entry img.logo {
     </div>
 </div>
 </div>
+
+Notes:
+
+And as compensation for helping me out with the video, I have agreed to use this time to tell you all about my son's Youtube Channel, which is TimePandaMax on Youtube, and so far consists of gaming live streams, so if you are interested in watching a 7-year-old play Portal 2 or Minecraft, uh... smash that... bell? And don't forget to like and subscribe! His goal is to get 1 million followers, so I'm sure he would appreciate it.
