@@ -71,9 +71,9 @@
 
 Notes:
 
-Hi everyone, I'm Paul Ganssle and for my day job, I'm a software developer, but as will soon become clear, it turns out that when my work day is over, I actually continue to be a software developer, believe it or not, and that's actually the subject of today's talk: the benefits of using your technical skills for your own pursuits!
+Hi everyone, I'm Paul Ganssle and for my day job, I'm a software developer at Google, but as will soon become clear, it turns out that when my work day is over, I actually continue to be a software developer, believe it or not, and that's actually the subject of today's talk: the benefits of using your technical skills for your own pursuits!
 
-Because here's the thing: we live in a technologically advanced world, and sufficiently advanced technology is essentially indistinguishable from magic, which means...
+Because here's the thing: we live in a technologically advanced world, and as Arthur C. Clarke said, any sufficiently advanced technology is essentially indistinguishable from magic, which means...
 
 					</textarea>
 				</section>
@@ -93,7 +93,7 @@ Notes:
 
 That you are a wizard. I mean, sorcerer.
 
-Think about it for a second, you invoke arcane commands, you summon daemons to do your bidding. You can perform unprecedented acts of divination. But the people in the world of Harry Potter, er.. I mean, Harvey Palmer... do not only do wizardry at their day job then do a bunch of stuff manually at home — they use magic in every aspect of their lives.
+Think about it for a second, you invoke arcane commands, you summon daemons to do your bidding. You can perform unprecedented acts of divination. But the people in the world of Harry Potter, er.. I mean, Harvey Palmer... are not training the students at... uh.. Pigswart to be corporate drones, only using their magic to deliver shareholder value — magic suffuses their daily life.
 
 Similarly, I think it's a bit sad that more people build impressive skill portfolios at work, but don't see the dozens of opportunities around them to use their programming skills to make their day-to-day life a bit better or just a bit more magical.
 
@@ -235,6 +235,14 @@ Brings a tear to your eye to see the next generation of hacker growing up before
      data-fragment-index="0">
 </div>
 
+Notes:
+
+The other thing that's great about this project is that it's given me lots of opportunities to connect with my son. At some point I wanted to make a little video to put on YouTube explaining to people how to use the app, and my son was super excited to do it together, he was super excited to be on a Youtube channel and to show off that he knew all the rules and that he was mastering chord identification.
+
+And last March, I put together a presentation about this project that was given at the NERD Summit in western Massachusetts, and my son got to join me on stage as part of the talk, which was really fun­— he got to feel the pride of his accomplishments with his first time presenting at a conference, plus it didn't hurt that we got to stay in a hotel.
+
+With this project in particular, I am often asked whether it's something I'd like to start selling or build a business around, and my answer is basically always no. I'm not saying it would be wrong or bad to make money from my work, but I don't want to worry about prioritizing user features, or features that drive engagement or retention. I am happy to make this available and use it to connect with my family. Though I have started to get a number of other parents contacting me saying that they've been using the app, and it is nice to know that other families are getting some joy out of it as well.
+
 --
 
 # Progress
@@ -245,6 +253,10 @@ Brings a tear to your eye to see the next generation of hacker growing up before
             type="video/webm">
 </video>
 </div>
+
+Notes:
+
+OK, so at this point, it would be unfair of me to tell you that I built this app 2 years ago and then not tell you how it's been going. I will not sugar-coat this, I would say it's going OK. He can consistently identify 13 chords, and he's /really/ good at it, as you'll see in the video. He doesn't seem to be identify individual notes, though according to the book that should just start happening naturally, so I don't know if he will actually acquire absolute pitch from this or not, but what he can do is already quite impressive, take a look:
 
 --
 
@@ -287,6 +299,10 @@ div.logo-entry img.logo {
 </div>
 </div>
 
+Notes:
+
+And as compensation for helping me out with the video, I have agreed to use this time to tell you all about my son's Youtube Channel, which is TimePandaMax on Youtube, and so far consists of gaming live streams, so if you are interested in watching a 7-year-old play Portal 2 or Minecraft, uh... smash that... bell? And don't forget to like and subscribe! His goal is to get 1 million followers, so I'm sure he would appreciate it.
+
 					</textarea>
 				</section>
 				
@@ -309,6 +325,12 @@ div.logo-entry img.logo {
      />
 </div>
 
+Notes:
+
+OK, so the next project I'd like to show you is something that I built primarily for myself, but understanding why I care about it takes a bit of explanation. You see, I listen to a lot of audio content, a mix of audiobooks and podcasts. Specifically, I usually try to listen to about an hour of one audiobook, then about an hour of a podcast, then about an hour of a different audiobook, then repeating. And about 18 months ago I started learning Spanish, so now I also like to alternate content between English and Spanish. I do it this way because I find that interleaving my content and stretching it out over many days helps me retain it better when compared to "binging" all in a row, and not getting a chance to sleep on the ideas presented before returning to them later.
+
+The problem, however, is that a lot of applications treat podcasts and audiobooks as fundamentally different things. They expect you to go to an audiobook application to listen to audiobooks and then switch to a podcast application to listen to podcasts, but about 10 years ago I realized that if I just have audio files on a computer, I can create an RSS feed for them and turn all my audiobooks into podcasts, so they would work with whatever podcast player I want!
+
 --
 
 # First version: manually run generated HTML pages
@@ -316,6 +338,10 @@ div.logo-entry img.logo {
 <img src="images/screenshots/audiobooks_v0.png"
      class="splash screenshot"
      />
+
+Notes:
+
+The first version of this was janky as hell. I would from time to time run a script that generates an HTML page with QR codes for the RSS feeds on it. As you can see there was no CSS here. No pagination, it was just a bare list of stuff.
 
 --
 
@@ -431,6 +457,9 @@ RSS_item = """
 </div>
 </div>
 
+Notes:
+
+As you can see from the code, not only was I manually running it, I was also manually adding the book information, but it worked! It generated a page and a rudimentary RSS feed that I could use.
 
 --
 
@@ -442,9 +471,13 @@ RSS_item = """
      />
 </div>
 
+Notes:
+
+I think pretty soon after that (I have no git history this early on in the project because it was all very yolo), I got tired of manually adding all the book information, and the number of books I had was getting unwieldy for a single page, so I added something that automatically parses the book names and authors from the folder names, retrieves descriptions from Google books, and breaks them up into multiple pages. This was still something I ran manually, and it was still generating a static page, but it was considerably more ergonomic.
+
 --
 
-# Next version: Flask app
+# Next version: Flask site
 
 <div class="centered-container fragment nospace-fragment disappearing-fragment fade-out"
      data-fragment-index="0"
@@ -471,6 +504,10 @@ RSS_item = """
 </div>
 </div>
 
+Notes:
+
+A few years after that, I didn't want to keep having to manually run the updater, and I realized that I wanted some more dynamic features that wouldn't fit with a static site. Despite having worked as a developer professionally for several years at this point, I barely knew how to make any kind of dynamic web site and I didn't know how to use SQL, but I had an interesting problem to solve, so over Christmas break I looked up how to use Flask and created and deployed a version of the app with nice mobile support, with different options for sorting and pagination, and that automatically updated itself with some cadence.
+
 --
 
 # Your applications can grow with you
@@ -488,6 +525,9 @@ RSS_item = """
     </div>
 </div>
 
+Notes:
+
+I've been maintaining some version of this app for a decade now, and I think it's a striking example of how your projects and your abilities can grow in a mutually-reinforcing way. When this project started causing problems with updates because of how I was deploying it, it encouraged me to learn to use docker so that I could isolate this from my system. Similarly, when I started doing a lot more work with SQL during my job, I finally felt confident migrating this system away from using a giant YAML file as a "database" to using sqlite.
 
 --
 
@@ -524,6 +564,16 @@ img.segfig {
      data-fragment-index="4"
      />
 
+Notes:
+
+The other thing that I think this app demonstrates is how valuable it is to build something that you can tailor to your own needs. For example, eagle-eyed viewers may have noticed that in the latest version, there are actually 3 RSS feeds. The reason for this is that I get audiobooks from various sources, and they're not always in the exact same format. Sometimes they're one giant file, sometimes they are broken up into a million 5 minute-long files, neither of which really works for me. There is often chapter information available, but that mainly just helps with the really long files, and if I break them up along chapter lines, I'm likely to get something where there are a lot of too-short files.
+
+Eventually I added what is probably my favorite feature of the whole application, which breaks up big files and merges small files until I get something that is made up of chunks of about an hour. The naïve way to do this would be to just greedily combine files until you get to an hour, but this leaves you with some sub-optimal splits, including some that are way too short.
+
+So the way I do it now, I can provide it an arbitrary cost function, and it will find the optimal way to split or merge the file that minimizes the total cost over the total audiobook. The default cost function is even an asymmetric cost function, that takes into account the fact that if I need something to be too short or too long, I'd prefer it to be too long.
+
+This is a ridiculous feature. It brings in an ffmpeg dependency, it uses dynamic programming — I've literally never needed to use dynamic programming before outside of an interview context, but apparently *this situation* is exactly what we've all been practicing for — and if this were a commercial product I'm sure I would have prioritized things like user accounts or filtering by tag way, way before this thing, but honestly, it's my favorite part of the application.
+
 					</textarea>
 				</section>
 				
@@ -539,6 +589,12 @@ img.segfig {
 <figcaption>The cable machines in the Google Cambridge gym have ~2.2x leverage over the nominal weights</figure>
 </figure>
 </div>
+
+Notes:
+
+OK, so I've told you about a few of my big projects, but I don't want to leave you with the impression that every project you do has to be some big thing. Some of my most satisfying uses of programming for myself are times when I had a question that I wanted to answer, and I could use a computer to do it. For example, a few years ago I noticed that when I was at the gym at Google, I could lift like a ton of weight on the cable machines. 180 pound tricep pushdowns, no problem. For some reason, when I am travelling, I have to set the rack like less than half of that.
+
+There are two obvious conclusions here: either Google offices make you extremely strong or traveling makes you extremely weak. But then I hit upon a third, clearly less likely option, which is that the pulleys on cable machines might be providing leverage. I wanted to quantify this, so I got a luggage scale and hooked it up to the cable machine, then figured out how much weight it was experiencing with each plate. I plugged this into a colab, which is like a jupyter notebook, but easier for me to share with other people at Google, and found that at the Cambridge gym the cable machine has a 2.2x leverage!
 
 --
 
@@ -572,6 +628,13 @@ img.segfig {
 </div>
 </div>
 
+Notes:
+
+Another example like this is a little project I did about 14 years ago. Back then, podcasts weren't nearly as professionally produced as they are today, and I found that there was an incredible amount of inconsistency between how they were mastered. Some of them were really loud and some of them were really quiet. But the thing is, they are pretty consistent throughout, and they're also very long files, so I was wondering how well you could estimate the amount of correction to the levels you would need to apply to normalize the audio *without* reading the whole file.
+
+I found that as you might expect, reading from the beginning or end of the file was not that consistent, because they usually have intro or outro music or something that is different from the bulk of the file. The middle was a lot better, but not consistently getting to the "true value", even for the relatively small sample I tested.
+
+However, I found that if you just took samples from the file randomly, you would converge on the true value remarkably quickly, using something like 2 seconds of audio from an hour+ long file. Very interesting result, and something that I'd love to see implemented in a podcast player (specifically AntennaPod, which is open source, hint hint all you developers looking for projects).
 
 --
 
@@ -591,6 +654,14 @@ img.segfig {
     class="fragment mobile-screenshot screenshot nospace-fragment fade-in"
     data-fragment-index="2"/>
 </div>
+
+Notes:
+
+Another little project I have is that I use Anki all the time, which is a spaced repetition flash card system. When I learned that you could put Javascript in the cards, it was somewhat dangerous knowledge for me, since it let me start expanding what I could do with cards.
+
+The method I'm using to learn spanish initially recommends that you don't do too much reading in favor of listening in context, but I still wanted flash cards, so I added some javascript that would automatically read words to me, first by themselves, and then in context. Then if you notice I added this little settings button, which when you expand it, it lets you use this janky little interface to decide what gets read and when.
+
+The thing is, now that I was using Javascript already, I realized that it might be nice to hear words in a lot of different contexts, so I added something that randomly chooses a sentence from a pre-set list of sentences, encoded in JSON in a field on the card. But then I needed a source of natural, native-sounding sentences.
 
 --
 
@@ -647,6 +718,10 @@ OUTPUT:
 
 </div>
 
+Notes:
+
+And it turns out that that's something LLMs are *really* good at, so I created this prompt to take words and their meanings and generate sentences. And the part of this I'm most proud of is this line, which tells the LLM that if the sentence can double as an interesting fact, go for it.
+
 --
 
 <!-- .slide: data-transition="none" -->
@@ -672,6 +747,14 @@ OUTPUT:
     </div>
 </div>
 
+Note:
+
+And you can see it works really well! It tends to give me a lot of interesting animal facts. Mostly they seem real, too, some of them are made up. I could have sworn that this full moon one was going to be made up, but actually that one appears to be real.
+
+But now I'm far enough along in learning Spanish that I've started doing a lot of reading, and reading is a big source of new vocabulary, and I wanted an easy way to turn those into flash cards, so I wrote a script that extracts annotations from my e-reader, and then takes the sentences that the word appeared in and turns that into an example sentence.
+
+And as you can see, I also have it generating a little bit of source information. This is important because I know that when something came from a Jorge Luis Borges book, it is probably some extremely obscure thing and if I use that word Spanish speakers will look at me funny. Half the time I looked up a word in his books I didn't know the word for the concept in /english/.
+
 --
 
 <h1> <span class="fragment nospace-fragment disappearing-fragment fade-out" data-fragment-index="1">Not every project is big!</span>
@@ -682,6 +765,10 @@ OUTPUT:
      class="screenshot splash">
 <div class="caption">Using Textual to create a proper UI to resolve word conflicts</div>
  </div>
+
+ Notes:
+ 
+ This was all well and good, but then I found that with all these new words coming in, I was seeing a lot of conflicts with words already in the deck, and I was spending a lot of time resolving these conflicts, so I whipped up this little user interface with Textual to make it easier to resolve the conflicts. And you know what I'm realizing now? This slide was supposed to be all about little projects, but uh.. that title isn't exactly appropriate at this point is it? Because actually what I'm demonstrating here is the way that small projects have a way of turning into big projects when you are really using the things you're working on.
 
 					</textarea>
 				</section>
