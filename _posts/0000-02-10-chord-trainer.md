@@ -117,7 +117,7 @@ Brings a tear to your eye to see the next generation of hacker growing up before
      data-fragment-index="0">
 <img src="images/pictures/conference-photo.jpg"
      class="splash fragment nospace-fragment disappearing-fragment fade-in"
-     data-fragment-index="0">
+     data-fragment-index="0" style="border: 2px solid black;">
 </div>
 
 Notes:
