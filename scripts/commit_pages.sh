@@ -3,15 +3,12 @@ set -e
 
 WORKTREE_LOCATION="docs"
 PRIMARY_BRANCH="master"
-HOME="$(pwd)"
+PROJECT_ROOT="$(pwd)"
+# HOME="$(pwd)"
 
 # Copy Git user configuration from the main repo to the worktree
 GIT_USER_NAME=$(git -C "${HOME}" config user.name || echo "Pages Updater")
 GIT_USER_EMAIL=$(git -C "${HOME}" config user.email || echo "noreply@example.com")
-
-# Set Git configuration for this repository
-git config user.name "${GIT_USER_NAME}"
-git config user.email "${GIT_USER_EMAIL}"
 
 # If no changes are necessary, we don't have to check the error conditions
 cd "${WORKTREE_LOCATION}"
@@ -19,7 +16,7 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "No changes to commit"
     exit 0
 fi
-cd "${HOME}"
+cd "${PROJECT_ROOT}"
 
 # First ensure that we're working on the primary source branch
 CURRENT_BRANCH="$(git symbolic-ref --short -q HEAD)"
@@ -58,4 +55,4 @@ if [ -n "$UNTRACKED_FILES_STR" ]; then
     git add -- "${UNTRACKED_FILES[@]}"
 fi
 
-git commit -m "Build pages for $(git rev-parse ${PRIMARY_BRANCH} | head -n 16)"
+git commit -m "Build pages for $(git rev-parse ${PRIMARY_BRANCH} | head -n 16)" --author="${GIT_USER_NAME} <${GIT_USER_EMAIL}>"
