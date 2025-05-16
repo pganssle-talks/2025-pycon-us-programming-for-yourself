@@ -850,8 +850,8 @@ https://pganssle.github.io/HaptiCap/
 
 <style>
 ul.wrap-up li {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
     font-size: 1.5em;
 }
 
@@ -860,27 +860,51 @@ div.wrap-up {
 }
 </style>
 
-<div class="centered-container">
-
+<div class="side-by-side">
+<div class="left-container left">
 <ul class="wrap-up">
-<li class="fragment fade-in" data-fragment-index="0">It doesn't have to pay</li>
-<li class="fragment fade-in" data-fragment-index="1">It doesn't have to scale</li>
-<li class="fragment fade-in" data-fragment-index="2">It doesn't have to work for everyone</li>
+<li>You can use whatever tech stack you want</li>
+<li class="fragment fae-in" data-fragment-index="0">Projects are a great way to learn</li>
+<li class="fragment fade-in" data-fragment-index="1">You can use programming to answer questions for yourself</li>
+<li class="fragment fade-in" data-fragment-index="2">Your projects don't have to pay</li>
+<li class="fragment fade-in" data-fragment-index="3">It's OK to make something just for you</li>
+<li class="fragment fade-in" data-fragment-index="4">It's also great to tell other people about your work</li>
 </ul>
-
-<div class="fragment fade-in wrap-up" data-fragment-index="3">It doesn't <em>have</em> to do any of these things, but it can!</div>
+</div>
+<div class="right">
+<!-- Tech stack -->
+<div class="fragment fade-out nospace-fragment disappearing-fragment"
+     style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em;" data-fragment-index="0">
+  <img src="external-images/logos/Python.svg" style="width: 100%; height: auto;">
+  <img src="external-images/logos/rust.svg" style="width: 100%; height: auto;">
+  <img src="external-images/logos/excel.svg" style="width: 100%; height: auto;">
+  <img src="images/generated/bash_scripts.png" style="width: 100%; height: auto; margin: auto">
+</div>
+<!-- Learning opportunity -->
+<div class="fragment fade-in-and-out nospace-fragment disappearing-fragment" data-fragment-index="0">
+    <img src="external-images/fair-use/automate-the-boring-stuff.jpg" style="max-height: 80dvh">
+</div>
+<!-- Answering questions -->
+<div class="fragment fade-in-and-out nospace-fragment disappearing-fragment" data-fragment-index="1">
+    <img src="images/figures/triunvirato-podcast-2015-03-31.png">
+</div>
+<!-- Don't have to pay -->
+<div class="fragment fade-in-and-out nospace-fragment disappearing-fragment"
+     style="display:grid; grid-template-columns: 1fr; gap: 0.5em;" data-fragment-index="2">
+     <img src="images/screenshots/chord-trainer-pwa-install-dialog.png" style="max-width: 100%; height: auto; margin: auto">
+     <img src="images/screenshots/chord-trainer-pwa-install-icon.png" style="max-width: 100%; height: auto; margin: auto">
+</div>
+<!-- Make something for you -->
+<div class="fragment fade-in-and-out nospace-fragment disappearing-fragment centered-container" data-fragment-index="3">
+     <img src="images/screenshots/houston-composite-map.png">
+    <div class="caption" style="font-style: italic; font-size: 0.6em">Traffic and all traffic cameras between my work and home in Houston, circa 2015</div>
 </div>
 
---
-
-# Learn by doing
-
-<div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center">
-<img src="images/screenshots/chord-trainer-pwa-install-app.png"
-    class="screenshot mobile-screenshot">
-<img src="images/screenshots/chord-trainer-pwa-install-installing.png",
-    class="screenshot mobile-screenshot">
-<img src="images/screenshots/chord-trainer-pwa-install-icon.png">
+<!-- Tell people about it -->
+<div class="centered-container fragment fade-in-and-out nospace-fragment disappearing-fragment" data-fragment-index="4">
+     <img src="images/screenshots/pycon-lightning-talks.png" style="max-width: 100%; height: auto; max-height: 80dvh; margin: auto">
+</div>
+</div>
 </div>
 
 --
