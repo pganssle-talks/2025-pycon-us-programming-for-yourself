@@ -222,12 +222,12 @@ A few years after that, I didn't want to keep having to manually run the updater
 
 <div class="centered-container">
     <img src="images/screenshots/audio-feeder-docker-gh.png"
-         class="splash screenshot fragment fade-out nospace-fragment"
+         class="splash screenshot fragment fade-out disappearing-fragment nospace-fragment"
          alt="Screenshot of a Github repository called audio-feeder-docker. It has 1 star, 17 commits and no releases. The languages are visible, 78% Dockerfile and 21% Shell."
          data-fragment-index="0"
          />
     <img src="images/screenshots/audio-feeder-gh.png"
-         class="splash screenshot fragment nospace-fragment disappearing-fragment fade-in"
+         class="splash screenshot fragment nospace-fragment fade-in"
          alt="Screenshot of a GitHub repository called audio-feeder. It has 18 stars and 0 forks. There are 5 releases, the most recent is 0.6.2 on December 3, 2022."
          data-fragment-index="0"/>
     <div class="caption">
