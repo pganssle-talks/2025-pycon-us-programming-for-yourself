@@ -2,16 +2,19 @@
 
 <img src="images/screenshots/claude-textual-ui-00.png"
     class="screenshot splash fragment disappearing-fragment nospace-fragment fade-out"
+    alt="A conversation with Claude 3.7 Sonnet labeled 'Textual TUI App for Merging Word Definitions'. Claude says that they will help create the app, and in the panel to the right it shows the full prompt, which explains what the application does (deduplicate Spanish words) and gives some different `attrs` definitions of dataclasses."
     data-fragment-index="0"/>
 
 <div class="gallery two-high">
     <div class="gallery-item">
         <img src="images/screenshots/claude-textual-ui-01.png"
+            alt="A follow-up conversation explaining that an earlier version has `asyncio.run` called from a running event loop, which is an error. In the side panel is more code"
             class="screenshot fragment nospace-fragment fade-in"
             data-fragment-index="0"/>
     </div>
     <div class="gallery-item">
         <img src="images/screenshots/claude-textual-ui-02.png"
+            alt="Another conversation that just says Error: and has an error pasted in. In the side panel Claude is generating more code."
             class="screenshot fragment nospace-fragment fade-in"
             data-fragment-index="0"/>
     </div>
@@ -138,6 +141,7 @@ Similarly, on the extreme low end, LLMs can make some of the easy stuff basicall
 <div class="centered-container fragment nospace-fragment fade-in" data-fragment-index="0">
 
 <img src="images/screenshots/sumana-blog-whisper.png"
+     alt="A screenshot of a blog post from a blog titled is ¨Speech-to-text with Whisper: How I use it & Why¨. The blog is by Sumana Harihareswara and is called Cogito, Ergo Sumana."
      class="splash screenshot"/>
 
 https://www.harihareswara.net/posts/2022/speech-to-text-with-whisper-how-i-use-it-why/

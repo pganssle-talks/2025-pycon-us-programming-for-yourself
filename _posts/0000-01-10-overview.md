@@ -1,6 +1,7 @@
 <div class="centered-container">
 <figure>
 <img src="images/generated/sorcerer_harvey_upscaled.png"
+     alt="An crude drawing of a man with wild hair and a beard, set on a blurry background of a castle of some sort. The man sort of resembles Hagrid from Harry Potter, and there is text in Comic Sans that says, ¨You're a sorcerer, Harvey¨"
      class="splash"
      />
 <figcaption class="smallcaption">From the IP-unencumbered film <i>Harvey Palmer and the Thinker's Rock</i></figcaption>
@@ -23,6 +24,7 @@ Similarly, I think it's a bit sad that more people build impressive skill portfo
 
 <div class="centered-container">
 <img src="images/generated/home_cooked_meal_illustration.png"
+     alt="A vector drawing of several people — three adults and three children — sitting around a table with food on it. One of the adults is a man with a light beard wearing an apron."
      class="splash"
      />
 
