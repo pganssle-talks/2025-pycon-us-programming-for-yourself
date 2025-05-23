@@ -2,6 +2,7 @@
 
 <div class="centered-container">
 <img src="images/screenshots/study_abstract_00.png"
+     alt="Abstract of a study called 'A longitudinal study of the process of acquiring absolute pitch: A practical report of training with the ´chord identification method´'. It is published in Psychology of Music 2014, Vol. 42(1) 86-111."
      class="screenshot splash">
 </div>
 
@@ -19,6 +20,7 @@ The way it works is that the child does 5 sessions of 25 identifications every d
 
 <img src="images/screenshots/chord-trainer-v00-red-yellow.png"
      class="screenshot splash fragment nospace-fragment disappearing-fragment fade-out"
+     alt="A black screen with the words ´Chord Identification Method Trainer´ at the top, with a small circled info button. Under that is a play button and a greyed-out right arrow. Below that are two squares, one red and one yellow, and under that is a score (0/0) with a ´reset´' button next to it. The lowest element on the page is a pulldown that says ´Yellow (CFA)´. It looks fine but crude, elements aren't centered or anything of that nature."
      data-fragment-index="0">
 <img src="images/screenshots/chord-trainer-v02-cat-faces.png"
      class="screenshot splash fragment disappearing-fragment nospace-fragment fade-in"
@@ -41,10 +43,17 @@ Unfortunately, I had some trouble getting my son to feel motivated by making a n
 <div class="centered-container">
 <div class="gallery two-high nospace-fragment disappearing-fragment fragment fade-out" data-fragment-index="0">
 <div class="gallery-item">
-    <img src="images/screenshots/chord-trainer-v02-cat-hearts.png" class="screenshot"/>
+    <img
+        src="images/screenshots/chord-trainer-v02-cat-hearts.png"
+        alt="Cropped screenshot of the chord trainer application. Red has been selected and is correct. The cat emoji now has hearts in its eyes. 😻"
+        class="screenshot"/>
 </div>
 <div class="gallery-item">
-    <img src="images/screenshots/chord-trainer-v02-cat-eek.png" class="screenshot"/>
+    <img
+        src="images/screenshots/chord-trainer-v02-cat-eek.png"
+        alt="Cropped screenshot of the chord trainer application. Red has been selected and is incorrect. The cat emoji is spooked. 🙀"
+        class="screenshot"/>
+
 </div>
 </div>
 
@@ -52,21 +61,25 @@ Unfortunately, I had some trouble getting my son to feel motivated by making a n
      data-fragment-index="0">
     <div class="gallery-item">
         <img src="images/screenshots/chord-trainer-v02-cat-faces-0-happy.png"
+             alt="Smiling cat emoji (😸) next to a 3/3 (100%) score."
              class="screenshot"
         />
     </div>
     <div class="gallery-item">
         <img src="images/screenshots/chord-trainer-v02-cat-faces-1-neutral.png"
+             alt="Slightly smiling cat emoji (🐱) next to a 3/4 (75%) score."
              class="screenshot"
              />
     </div>
     <div class="gallery-item">
         <img src="images/screenshots/chord-trainer-v02-cat-faces-2-mad.png"
+             alt="Mad cat emoji (😾) next to a 3/5 (60%) score."
              class="screenshot"
         />
     </div>
     <div class="gallery-item">
         <img src="images/screenshots/chord-trainer-v02-cat-faces-3-sad.png"
+             alt="Sad cat emoji (😿) next to a 3/5 (60%) score."
              class="screenshot"
              />
     </div>
@@ -91,7 +104,9 @@ I think this is an example of something that was actually quite fun to build bec
      class="splash fragment disappearing-fragment nospace-fragment fade-out"
      data-fragment-index="0">
 
-<video controls autoplay muted class="fragment disappearing-fragment nospace-fragment fade-in-and-out" data-fragment-index="0">
+<video controls autoplay muted class="fragment disappearing-fragment nospace-fragment fade-in-and-out" data-fragment-index="0"
+    aria-label="Screen capture of the chord trainer application. A perfect score is achieved on the red/yellow label, showing 5/5 (100%), then the level is changed to red/yellow/blue and the perfect score remains."
+    >
     <source src="videos/color_change_hack.webm"
             type="video/webm">
 </video>
@@ -114,8 +129,10 @@ Brings a tear to your eye to see the next generation of hacker growing up before
 <div class="centered-container">
 <img src="images/screenshots/chord-trainer-video-00.png"
      class="screenshot splash fragment nospace-fragment disappearing-fragment fade-out"
+     alt="Paul and his son (a boy of around 5) at a table with a microphone and the chord trainer overlaid in the bottom left corner. THey are both wearing shirts with a space pattern and taco-cats (cats sticking out of tacos). The boy is also wearing headphones with cat ears. The application shows 12/12 (100%)"
      data-fragment-index="0">
 <img src="images/pictures/conference-photo.jpg"
+     alt="Paul (a man with brown hair and a beard in his late 30s) and his son. They are wearing conference lanyards and are standing in front of a projector that says ´Welcome Nerds! March 8-9, 2024, new england regional developers. UMass Amherst Campus Center"
      class="splash fragment nospace-fragment disappearing-fragment fade-in"
      data-fragment-index="0" style="border: 2px solid black;">
 </div>
@@ -135,7 +152,9 @@ With this project in particular, I am often asked whether it's something I'd lik
 # Progress
 
 <div class="centered-container">
-<video controls>
+<video controls
+    aria-label="Video of a child using a tablet with an overlay of the application in the corner. He calls out chord names and presses the corresponding button, getting them all right. The chords are chosen randomly from 13 options, arranged in a grid. Each option has its own color and the chord components in western (A-G) notation."
+    >
     <source src="videos/chord_identification.webm"
             type="video/webm">
 </video>
@@ -174,6 +193,7 @@ div.logo-entry img.logo {
 
 <div class="centered-container">
 <img src="images/pictures/timepandamax_banner_like_and_subscribe.png"
+     alt="A large image showing a Minecrat avatar that is in clashing cyan and pink and with an 8-bit-style face drawn on. He is standing in front of a circle of armor stands with sand heads in Minecraft. Below that it says, ¨Like and Subscribe¨ in a sort of comical bouncy font, in blue with orange and red flames coming off every letter."
      class="splash">
 
 <div id="logo-container">

@@ -3,14 +3,17 @@
 <div class="centered-container">
 <img src="images/screenshots/antennapod_queue_screenshot_base.png"
      class="splash mobile-screenshot screenshot nospace-fragment fragment disappearing-fragment fade-out"
+     alt="The queue of an AntennaPod feed. It contains 5 elements"
      data-fragment-index="0"
      />
 <img src="images/screenshots/antennapod_queue_screenshot_books_and_english.png"
      class="splash mobile-screenshot screenshot nospace-fragment fragment disappearing-fragment fade-in-and-out"
+     alt="The same queue, but now 3 elements are highlighted. 'Charles Stross - Invisible Sun' is labeled 'Fiction Book', 'Core.py Episode 21: A Garbage Episode' is labeled 'Podcast Episode' and 'Cliff Kuang - User Friendly' is labeled 'Nonfiction Book'"
      data-fragment-index="0"
      />
 <img src="images/screenshots/antennapod_queue_screenshot_spanish.png"
      class="splash mobile-screenshot screenshot nospace-fragment fragment fade-in"
+     alt="The same queue, but now the other two elements are highlighted, both labeled 'Spanish Podcast'. The episodes are 'Pizzel Ep 37 - Un bofetazo de mono' and 'Esferas Invisibles - 23:59:60'"
      data-fragment-index="1"
      />
 </div>
@@ -28,6 +31,7 @@ The problem, however, is that a lot of applications treat podcasts and audiobook
 # First version: manually run generated HTML pages
 
 <img src="images/screenshots/audiobooks_v0.png"
+     alt="A screenshot of a sparse webpage labeled 'Audiobook RSS Feeds'. It has 3 (public domain) books, each with a cover image and a QR code. The books are Edith Wharton - The Writing of Fiction, H. G. Wells - The Invisible Man and Bram Stoker - Dracula"
      class="splash screenshot"
      />
 
@@ -163,6 +167,7 @@ As you can see from the code, not only was I manually running it, I was also man
 
 <div class="centered-container">
 <img src="images/screenshots/audiobooks_v1.png"
+     alt="An improved version of the webpage. It now has 22 pages and large, oversized arrows left and right for navigation to first, previous, next and last pages. The section with books still has a cover and a QR code, but now the rows alternate between a dark and light grey background. The cover and QR code have moved to the left, and there is now a description below each book. The books are all by Vernor Vinge: ´A Fire Upon the Deep´, ´The Children of the Sky´ and ´A Deepness in the Sky´. (They are in this order even though ´Children of the Sky´ is actually the third book in the series)"
      class="splash screenshot"
      />
 </div>
@@ -181,17 +186,20 @@ I think pretty soon after that (I have no git history this early on in the proje
      data-fragment-index="0"
 >
 <img src="images/screenshots/audio_feeder_00_list_entry.jpg"
+     alt="A smaller more mobile-friendly version of the site. The arrows are now smaller, the rows are still striped between dark and light grey, but there is also a settings element in the top right. The QR codes are no longer visible, but there is an icon below each cover representing 4 squares, and each element has multiple links under the name, ´Single File´, ´Segmented´ and ´Chapters´ - some combination of these shows up on each book. It is the same 3 public domain books,b ut now Mary Shelley's Frankeinstein is also on the list."
      class="splash screenshot"
      />
 </div>
 
 <div class="centered-container nospace-fragment fragment disappearing-fragment fade-in"
      data-fragment-index="0"
+     alt="A similar screenshot as before, but with a QR code superposed on top of the site"
 >
 <div class="side-by-side">
 
 <img src="images/screenshots/audio_feeder_01_list_qr.jpg"
      class="splash screenshot"
+     alt="A closer crop of the screenshot from before, but now a settings dialog pulldown is visible showing ´Sort Order´, ´Direction´ and ´Items per Page´"
      />
 
 <img src="images/screenshots/audio_feeder_02_settings_pulldown.jpg"
@@ -213,13 +221,15 @@ A few years after that, I didn't want to keep having to manually run the updater
 # Your applications can grow with you
 
 <div class="centered-container">
-    <img src="images/screenshots/audio-feeder-gh.png"
-         class="splash screenshot fragment nospace-fragment disappearing-fragment fade-out"
-         data-fragment-index="0"/>
     <img src="images/screenshots/audio-feeder-docker-gh.png"
-         class="splash screenshot fragment fade-in nospace-fragment"
+         class="splash screenshot fragment fade-out nospace-fragment"
+         alt="Screenshot of a Github repository called audio-feeder-docker. It has 1 star, 17 commits and no releases. The languages are visible, 78% Dockerfile and 21% Shell."
          data-fragment-index="0"
          />
+    <img src="images/screenshots/audio-feeder-gh.png"
+         class="splash screenshot fragment nospace-fragment disappearing-fragment fade-in"
+         alt="Screenshot of a GitHub repository called audio-feeder. It has 18 stars and 0 forks. There are 5 releases, the most recent is 0.6.2 on December 3, 2022."
+         data-fragment-index="0"/>
     <div class="caption">
         <i>Available at <a href="https://github.com/pganssle/audio-feeder">https://github.com/pganssle/audio-feeder</a></i>
     </div>
@@ -243,26 +253,32 @@ img.segfig {
 
 <img src="images/screenshots/audio_feeder_03_feeds.jpg"
      class="splash screenshot fragment disappearing-fragment fade-out"
+     alt="One of the earlier screenshots of the website, this time with the 3 alternate feeds (Single File, Chapters, Segmented) highlighted on Bram Stoker - Dracula"
      data-fragment-index="0"
      />
 <img src="images/figures/chapter-segmentation-base.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
+     alt="A vector drawing with various rounded rectangles of various thicknesses stacked on one another, representing chapters in an audiobook file. They have numbers on them in white representing minutes. 45, 10, 25, 55, 18, 8, 50, 35, 93, 15, 20"
      data-fragment-index="0"
      />
 <img src="images/figures/chapter-segmentation.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
+     alt="The same as the previous figure, but now there is an arrow pointing right to another figure which has all the same rectangles but spread out and with no numbers on them. The shorter ones are in red and the longer ones are in green."
      data-fragment-index="1"
      />
 <img src="images/figures/chapter-segmentation-greedy.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
+     class="The figure representing chapters with an arrow that now splits into 5 right arrows, each pointing to smaller stacks of rounded rectangles. The chapters have been grouped together, and there are numbers representing each aggregate's size: 70, 73, 93, 93, 35"
      data-fragment-index="2"
      />
 <img src="images/figures/chapter-segmentation-greedy-red.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
+     alt="The same as the previous figure, but now the last number (35) is bright red, and two of the other numbers (73 and 93) are a darker red)."
      data-fragment-index="3"
      />
 <img src="images/figures/chapter-segmentation-optimal.svg"
      class="splash figure fragment disappearing-fragment fade-in-and-out segfig"
+     alt="Another distribution of the chapters, this time into 4 files of length 70, 81, 85 and 128"
      data-fragment-index="4"
      />
 
